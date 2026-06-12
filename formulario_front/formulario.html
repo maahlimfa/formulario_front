@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+
+    <h2>Preencha seus dados</h2>
+
+    <form action="#" method="get">
+        
+        <!-- Texto simples: Nome completo -->
+        <label for="nome">Nome completo:</label><br>
+        <input type="text" id="nome" name="nome" required>
+        <br><br>
+
+        <!-- E-mail -->
+        <label for="email">E-mail:</label><br>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <!-- Número: Idade ou telefone -->
+        <label for="idade">Idade:</label><br>
+        <input type="number" id="idade" name="idade" min="0" max="120">
+        <br><br>
+
+        <!-- Data: Data de nascimento -->
+        <label for="nascimento">Data de nascimento:</label><br>
+        <input type="date" id="nascimento" name="nascimento">
+        <br><br>
+
+        <!-- Seleção (Dropdown): Estado Civil -->
+        <label for="estado_civil">Estado Civil:</label><br>
+        <select id="estado_civil" name="estado_civil">
+            <option value="">Selecione...</option>
+            <option value="solteiro">Solteiro(a)</option>
+            <option value="casado">Casado(a)</option>
+            <option value="divorciado">Divorciado(a)</option>
+            <option value="viuvo">Viúvo(a)</option>
+        </select>
+        <br><br>
+
+        <!-- Radio Button: Gênero -->
+        <fieldset>
+            <legend>Gênero:</legend>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="masculino">Masculino</label><br>
+            
+            <input type="radio" id="feminino" name="genero" value="feminino">
+            <label for="feminino">Feminino</label><br>
+            
+            <input type="radio" id="outro" name="genero" value="outro">
+            <label for="outro">Outro</label>
+        </fieldset>
+        <br>
+
+        <!-- Checkbox: Aceite de termos -->
+        <input type="checkbox" id="termos" name="termos" required>
+        <label for="termos">Aceito os termos de uso</label>
+        <br><br>
+
+        <!-- Botão de envio -->
+        <input type="submit" value="Enviar">
+
+    </form>
+
+</body>
+</html>
