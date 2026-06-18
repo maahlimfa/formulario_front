@@ -6,64 +6,71 @@
 </head>
 <body>
 
-    <h2>Preencha seus dados</h2>
+    <header>
+        <h1>Sistema de Cadastro</h1>
+        <nav>
+            <a href="#">Home</a> |
+            <a href="#">Sobre</a> |
+            <a href="#">Contato</a>
+        </nav>
+        <hr>
+    </header>
 
-    <form action="#" method="get">
-        
-        <!-- Texto simples: Nome completo -->
-        <label for="nome">Nome completo:</label><br>
-        <input type="text" id="nome" name="nome" required>
-        <br><br>
+    <main>
+        <h2>Preencha seus dados</h2>
 
-        <!-- E-mail -->
-        <label for="email">E-mail:</label><br>
-        <input type="email" id="email" name="email" required>
-        <br><br>
+        <form action="#" method="get">
 
-        <!-- Número: Idade ou telefone -->
-        <label for="idade">Idade:</label><br>
-        <input type="number" id="idade" name="idade" min="0" max="120">
-        <br><br>
+            <label for="nome">Nome completo:</label><br>
+            <input type="text" id="nome" name="nome" required>
+            <br><br>
 
-        <!-- Data: Data de nascimento -->
-        <label for="nascimento">Data de nascimento:</label><br>
-        <input type="date" id="nascimento" name="nascimento">
-        <br><br>
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required>
+            <br><br>
 
-        <!-- Seleção (Dropdown): Estado Civil -->
-        <label for="estado_civil">Estado Civil:</label><br>
-        <select id="estado_civil" name="estado_civil">
-            <option value="">Selecione...</option>
-            <option value="solteiro">Solteiro(a)</option>
-            <option value="casado">Casado(a)</option>
-            <option value="divorciado">Divorciado(a)</option>
-            <option value="viuvo">Viúvo(a)</option>
-        </select>
-        <br><br>
+            <label for="idade">Idade:</label><br>
+            <input type="number" id="idade" name="idade" min="0" max="120">
+            <br><br>
 
-        <!-- Radio Button: Gênero -->
-        <fieldset>
-            <legend>Gênero:</legend>
+            <label for="nascimento">Data de nascimento:</label><br>
+            <input type="date" id="nascimento" name="nascimento">
+            <br><br>
+
+            <label for="estado_civil">Estado Civil:</label><br>
+            <select id="estado_civil" name="estado_civil">
+                <option value="">Selecione...</option>
+                <option value="solteiro">Solteiro(a)</option>
+                <option value="casado">Casado(a)</option>
+                <option value="divorciado">Divorciado(a)</option>
+                <option value="viuvo">Viúvo(a)</option>
+            </select>
+            <br><br>
+
+            Gênero:<br>
             <input type="radio" id="masculino" name="genero" value="masculino">
             <label for="masculino">Masculino</label><br>
-            
+
             <input type="radio" id="feminino" name="genero" value="feminino">
             <label for="feminino">Feminino</label><br>
-            
+
             <input type="radio" id="outro" name="genero" value="outro">
             <label for="outro">Outro</label>
-        </fieldset>
-        <br>
+            <br><br>
 
-        <!-- Checkbox: Aceite de termos -->
-        <input type="checkbox" id="termos" name="termos" required>
-        <label for="termos">Aceito os termos de uso</label>
-        <br><br>
+            <input type="checkbox" id="termos" name="termos" required>
+            <label for="termos">Aceito os termos de uso</label>
+            <br><br>
 
-        <!-- Botão de envio -->
-        <input type="submit" value="Enviar">
+            <input type="submit" value="Enviar">
 
-    </form>
+        </form>
+    </main>
+
+    <footer>
+        <hr>
+        <p>&copy; 2026 - Seu Nome Completo. Todos os direitos reservados.</p>
+    </footer>
 
 </body>
 </html>
