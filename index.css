@@ -1,0 +1,46 @@
+main{
+background-color: rgb(97, 48, 90);
+color: hotpink;
+-webkit-box-shadow:16px 14px 25px -2px #654242
+box-shadow: 16px 14px 25px -2px #654242
+
+}
+body{
+background-color: rgb(97, 48, 90);
+
+}
+
+h1 { 
+color: hotpink;
+}
+
+nav {
+color: hotpink;
+}
+
+a{
+color: hotpink;
+}
+
+.input-field{
+    background-color: rgb(255, 217, 223);
+color: hotpink;
+}
+
+.submit-button{
+    background-color: rgb(255, 217, 223);
+    color: hotpink;
+}
+
+label{
+color: hotpink;
+}
+
+option{
+color: hotpink;
+}
+
+p{
+color: hotpink;
+}
+

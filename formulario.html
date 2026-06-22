@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+    <!-- Cabeçalho com ID único -->
+    <header id="main-header">
+        <h1 class="page-title">Sistema de Cadastro</h1>
+        <nav class="nav-menu">
+            <a href="#" class="nav-link">Home</a> |
+            <a href="#" class="nav-link">Sobre</a> |
+            <a href="#" class="nav-link">Contato</a>
+        </nav>
+        <hr>
+    </header>
+
+    <!-- Conteúdo principal com ID único -->
+    <main id="main-content">
+        <h2 class="section-title">Preencha seus dados</h2>
+
+        <!-- Formulário com ID único -->
+        <form id="cadastro-form" action="#" method="get">
+
+            <label for="nome" class="field-label">Nome completo:</label><br>
+            <input type="text" id="nome" name="nome" class="input-field" required>
+            <br><br>
+
+            <label for="email" class="field-label">E-mail:</label><br>
+            <input type="email" id="email" name="email" class="input-field" required>
+            <br><br>
+
+            <label for="idade" class="field-label">Idade:</label><br>
+            <input type="number" id="idade" name="idade" class="input-field" min="0" max="120">
+            <br><br>
+
+            <label for="nascimento" class="field-label">Data de nascimento:</label><br>
+            <input type="date" id="nascimento" name="nascimento" class="input-field">
+            <br><br>
+
+            <label for="estado_civil" class="field-label">Estado Civil:</label><br>
+            <select id="estado_civil" name="estado_civil" class="input-field">
+                <option value="" class="select-option">Selecione...</option>
+                <option value="solteiro" class="select-option">Solteiro(a)</option>
+                <option value="casado" class="select-option">Casado(a)</option>
+                <option value="divorciado" class="select-option">Divorciado(a)</option>
+                <option value="viuvo" class="select-option">Viúvo(a)</option>
+            </select>
+            <br><br>
+
+            Gênero:<br>
+            <input type="radio" id="masculino" name="genero" value="masculino" class="input-field">
+            <label for="masculino" class="field-label">Masculino</label><br>
+
+            <input type="radio" id="feminino" name="genero" value="feminino" class="input-field">
+            <label for="feminino" class="field-label">Feminino</label><br>
+
+            <input type="radio" id="outro" name="genero" value="outro" class="input-field">
+            <label for="outro" class="field-label">Outro</label>
+            <br><br>
+
+            <input type="checkbox" id="termos" name="termos" class="input-field" required>
+            <label for="termos" class="field-label">Aceito os termos de uso</label>
+            <br><br>
+
+            <input type="submit" value="Enviar" class="submit-button">
+
+        </form>
+    </main>
+
+    <!-- Rodapé com ID único -->
+    <footer id="main-footer">
+        <hr>
+        <p class="text-content">&copy; 2026 - Seu Nome Completo. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
